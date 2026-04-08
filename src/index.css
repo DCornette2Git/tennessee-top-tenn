@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap');
+
+.paranormal-hover:hover {
+  font-family: 'Creepster', cursive !important;
+  color: #ff0000 !important;
+  /* Bright red */
+}
+
+
+/* Global Variables & Dark Mode Defaults */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #64b5f6;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* Body */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #121212;
+  /* dark bg */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  /* light text shadow for pop */
+}
+
+/* Hero Title / Subheading */
+.hero {
+  margin-top: 4rem;
+  /* space from top */
+  color: orangered;
+  /* red-orange */
+  text-align: center;
+}
+
+/* Global Variables & Dark Mode Defaults */
+
+.shadow-pop {
+  box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.15);
+}
+
+.shadow-pop:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.23);
+}
+
+.text-shadow-pop {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
