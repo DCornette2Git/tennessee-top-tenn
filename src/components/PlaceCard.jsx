@@ -5,12 +5,14 @@
 
 export default function PlaceCard({ place }) {
     const { name, city, description, link, image } = place;
+    // Prepend BASE_URL so images resolve correctly on GitHub Pages
+    const imagePath = image ? `${import.meta.env.BASE_URL}${image}` : null;
 
     return (
         <div className="bg-white rounded-xl shadow-pop overflow-hidden hover:shadow-lg transition-shadow duration-200">
             {image && (
                 <img
-                    src={image}
+                    src={imagePath}
                     alt={name}
                     className="w-full h-48 object-cover"
                 />
