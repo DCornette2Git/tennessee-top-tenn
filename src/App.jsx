@@ -18,7 +18,7 @@ import GearShop from "./components/GearShop";
 import Register from "./components/Auth/Register";
 import Login from "./components/Auth/Login";
 import MemberProfile from "./components/Profile/MemberProfile";
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./context/AuthProvider";
 
 /* ── Category-based pages (Home / Music / Hiking / etc.) ── */
 function CategoryPage() {
