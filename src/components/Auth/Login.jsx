@@ -102,7 +102,7 @@ export default function Login() {
             </div>
             
             <div className="text-center mt-8">
-                <Link to="/paranormal" className="text-gray-500 hover:text-white text-[10px] uppercase tracking-tighter">← Return to Dashboard</Link>
+                <Link to="/" className="text-gray-500 hover:text-white text-[10px] uppercase tracking-tighter">← Return to Dashboard</Link>
             </div>
         </div>
     );
