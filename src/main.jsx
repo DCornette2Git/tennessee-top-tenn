@@ -6,7 +6,7 @@ import './index.css'   // <- imports Tailwind and your global CSS
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename="tennessee-top-tenn">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
