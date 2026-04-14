@@ -2,7 +2,7 @@
   "name": "tennessee-top-tenn",
   "version": "0.0.0",
   "private": true,
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "Tennessee Top Tenn - A professional investigator dashboard for tracking paranormal hotspots, music history, and historical discoveries across Tennessee.",
   "license": "ISC",
   "author": "David Cornette",
   "type": "module",
@@ -16,6 +16,7 @@
     "tw:init": "tailwindcss init -p"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.103.0",
     "@tailwindcss/cli": "^4.2.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

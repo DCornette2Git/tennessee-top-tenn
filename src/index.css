@@ -1,14 +1,21 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
+/* ── Paranormal button hover effect ── */
 .paranormal-hover:hover {
   font-family: 'Creepster', cursive !important;
   color: #ff0000 !important;
-  /* Bright red */
+}
+
+/* ── Tailwind v4: define custom theme tokens ── */
+@theme {
+  --color-deep-charcoal: #121212;
+  --color-spectral-green: #00FF41;
+  --color-warning-orange: #FF5722;
 }
 
 
-/* Global Variables & Dark Mode Defaults */
+/* ── Global Variables & Dark Mode Defaults ── */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,29 +31,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Links */
-a {
-  font-weight: 500;
-  color: #64b5f6;
-  text-decoration: none;
-  transition: color 0.25s;
+/* ── Links ── */
+@layer base {
+  a {
+    font-weight: 500;
+    color: #64b5f6;
+    text-decoration: none;
+    transition: color 0.25s;
+  }
+
+  a:hover {
+    color: yellow;
+  }
 }
 
-a:hover {
-  color: yellow;
-}
-
-/* Body */
+/* ── Body ── */
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   background-color: #121212;
-  /* dark bg */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* Headings */
+/* ── Headings ── */
 h1,
 h2,
 h3,
@@ -57,20 +65,16 @@ h6 {
   font-weight: 700;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-  /* light text shadow for pop */
 }
 
-/* Hero Title / Subheading */
+/* ── Hero Title / Subheading ── */
 .hero {
   margin-top: 4rem;
-  /* space from top */
   color: orangered;
-  /* red-orange */
   text-align: center;
 }
 
-/* Global Variables & Dark Mode Defaults */
-
+/* ── Pop Shadow Utilities ── */
 .shadow-pop {
   box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.15);
 }

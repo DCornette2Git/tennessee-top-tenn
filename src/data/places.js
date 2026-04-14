@@ -20,6 +20,9 @@ export const placesData = {
             description: "Famous for the Bell Witch haunting, a must-visit for ghost enthusiasts.",
             link: "https://bellwitchcave.com/",
             image: "bellwitchcave.png",
+            lat: 36.5878,
+            lng: -87.0654,
+            bookingLink: "https://bellwitchcave.com/"
         },
         {
             id: 2,
@@ -28,6 +31,9 @@ export const placesData = {
             description: "Locals claim strange lights, chilling voices, and phantom footsteps haunt this tunnel — one of the most haunted locations in East Tennessee.",
             link: "https://gatlinburghaunts.com/the-legend-of-sensabaugh-tunnel/",
             image: "sensabaughtunnel.png",
+            lat: 36.5484,
+            lng: -82.5615,
+            bookingLink: "https://gatlinburghaunts.com/the-legend-of-sensabaugh-tunnel/"
         },
         {
             id: 3,
@@ -36,6 +42,9 @@ export const placesData = {
             description: "Historic music venue with stories of spirits from past performers.",
             link: "https://ryman.com/",
             image: "hauntedryman.png",
+            lat: 36.1613,
+            lng: -86.7785,
+            bookingLink: "https://ryman.com/tours/"
         },
         {
             id: 4,
@@ -44,6 +53,9 @@ export const placesData = {
             description: "Reported sightings of ghostly performers from the past.",
             link: "https://orpheum-memphis.com/",
             image: "hauntedorpheum.png",
+            lat: 35.1413,
+            lng: -90.0560,
+            bookingLink: "https://orpheum-memphis.com/events/"
         },
         {
             id: 5,
@@ -52,6 +64,9 @@ export const placesData = {
             description: "Creepy and historic cemetery with many ghost stories.",
             link: "https://hauntedknoxville.net/",
             image: "talbott.png",
+            lat: 35.9606,
+            lng: -83.9207,
+            bookingLink: "https://hauntedknoxville.net/"
         },
         {
             id: 6,
@@ -60,6 +75,9 @@ export const placesData = {
             description: "Home of Andrew Jackson, rumored to have paranormal activity.",
             link: "https://thehermitage.com/",
             image: "hermitage.png",
+            lat: 36.2163,
+            lng: -86.6152,
+            bookingLink: "https://thehermitage.com/ghost-tours/"
         },
         {
             id: 7,
@@ -68,6 +86,9 @@ export const placesData = {
             description: "Guests report mysterious sounds and apparitions.",
             link: "https://www.choochoo.com/",
             image: "choochoo.png",
+            lat: 35.0384,
+            lng: -85.3082,
+            bookingLink: "https://www.choochoo.com/"
         },
         {
             id: 8,
@@ -76,6 +97,9 @@ export const placesData = {
             description: "Caverns with underground ghost stories.",
             link: "https://www.cumberlandcaverns.com/",
             image: "cumberlandcaverns.png",
+            lat: 35.6705,
+            lng: -85.6766,
+            bookingLink: "https://www.cumberlandcaverns.com/"
         },
         {
             id: 9,
@@ -84,6 +108,9 @@ export const placesData = {
             description: "Historic prison with reported paranormal sightings.",
             link: "https://www.brushymountainstatepenitentiary.com/",
             image: "brushymountain.png",
+            lat: 36.0967,
+            lng: -84.4449,
+            bookingLink: "https://www.brushymountainstatepenitentiary.com/tours"
         },
         {
             id: 10,
@@ -92,6 +119,9 @@ export const placesData = {
             description: "Historic hotel, many guests report unusual activity.",
             link: "https://www.thomashousehotel.com/",
             image: "thomashouse.png",
+            lat: 36.5317,
+            lng: -85.8497,
+            bookingLink: "https://www.thomashousehotel.com/"
         },
     ],
 
