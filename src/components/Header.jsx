@@ -1,17 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 
 export default function Header() {
-    const { isLoggedIn, currentUser } = useAuth();
+    const { isLoggedIn, currentUser, logout } = useAuth();
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+        await logout();
+        navigate("/");
+    };
 
     return (
         <header className="mt-8 md:mt-16 text-center px-4 w-full max-w-6xl relative">
-            <div className="absolute top-0 right-4 flex gap-4">
+            <div className="absolute top-0 right-4 flex gap-4 items-center">
                 {isLoggedIn ? (
-                    <Link to="/profile" className="flex items-center gap-2 bg-gray-900 border border-spectral-green px-3 py-1 rounded-full hover:bg-spectral-green hover:text-black transition-all text-xs font-bold font-mono">
-                        <span className="w-2 h-2 bg-spectral-green rounded-full animate-pulse"></span>
-                        {currentUser.username.toUpperCase()}
-                    </Link>
+                    <div className="flex items-center gap-3">
+                        <Link to="/profile" className="flex items-center gap-2 bg-gray-900 border border-spectral-green px-3 py-1 rounded-full hover:bg-spectral-green hover:text-black transition-all text-xs font-bold font-mono">
+                            <span className="w-2 h-2 bg-spectral-green rounded-full animate-pulse"></span>
+                            {currentUser?.username?.toUpperCase() || 'PROFILE'}
+                        </Link>
+                        <button onClick={handleLogout} className="bg-red-900/40 border border-red-500/50 text-red-100 px-3 py-1 rounded text-xs hover:bg-red-500 hover:text-white transition-colors uppercase font-bold font-mono">
+                            Logout
+                        </button>
+                    </div>
                 ) : (
                     <div className="flex gap-2">
                         <Link to="/login" className="bg-gray-800 border border-gray-600 text-gray-300 px-3 py-1 rounded text-xs hover:bg-gray-700 transition-colors uppercase font-bold font-mono">
