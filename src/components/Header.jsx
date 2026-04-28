@@ -35,7 +35,14 @@ export default function Header() {
                 )}
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-extrabold text-orange-600 leading-tight mt-8">
+            <Link to="/" className="inline-block transition-transform hover:scale-105 duration-300">
+                <img 
+                    src={`${import.meta.env.BASE_URL}Logo.png`}
+                    alt="Tennessee Top Tenn Logo" 
+                    className="w-64 md:w-[450px] h-32 md:h-48 mx-auto drop-shadow-[0_0_25px_rgba(234,88,12,0.4)] mb-4"
+                />
+            </Link>
+            <h1 className="text-4xl md:text-6xl font-extrabold text-orange-600 leading-tight">
                 Tennessee's Top Tenn to See
             </h1>
             <p className="text-orange-500 text-lg md:text-2xl mt-4 max-w-2xl mx-auto text-shadow-pop">
