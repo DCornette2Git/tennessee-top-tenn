@@ -24,11 +24,11 @@ export default function Header() {
                         </button>
                     </div>
                 ) : (
-                    <div className="flex gap-2">
-                        <Link to="/login" className="bg-gray-800 border border-gray-600 text-gray-300 px-3 py-1 rounded text-xs hover:bg-gray-700 transition-colors uppercase font-bold font-mono">
+                    <div className="flex gap-2 pr-4">
+                        <Link to="/login" className="bg-gray-800 border border-gray-600 text-gray-300 px-4 py-2 rounded text-xs hover:bg-gray-700 transition-colors uppercase font-bold font-mono">
                             Login
                         </Link>
-                        <Link to="/register" className="bg-spectral-green text-black px-3 py-1 rounded text-xs hover:bg-green-600 transition-colors uppercase font-bold font-mono shadow-[0_0_10px_rgba(0,255,65,0.3)]">
+                        <Link to="/register" className="bg-spectral-green text-black px-4 py-2 rounded text-xs hover:bg-green-600 transition-colors uppercase font-bold font-mono shadow-[0_0_10px_rgba(0,255,65,0.3)]">
                             Join
                         </Link>
                     </div>
