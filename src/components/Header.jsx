@@ -11,8 +11,8 @@ export default function Header() {
     };
 
     return (
-        <header className="mt-8 md:mt-16 text-center px-4 w-full max-w-6xl relative">
-            <div className="absolute top-0 right-4 flex gap-4 items-center">
+        <header className="mt-8 md:mt-16 text-center px-4 w-full max-w-6xl relative pt-12 md:pt-0">
+            <div className="absolute top-0 right-4 flex gap-4 items-center z-10">
                 {isLoggedIn ? (
                     <div className="flex items-center gap-3">
                         <Link to="/profile" className="flex items-center gap-2 bg-gray-900 border border-spectral-green px-3 py-1 rounded-full hover:bg-spectral-green hover:text-black transition-all text-xs font-bold font-mono">
