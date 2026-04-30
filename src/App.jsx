@@ -19,6 +19,7 @@ import Register from "./components/Auth/Register";
 import Login from "./components/Auth/Login";
 import MemberProfile from "./components/Profile/MemberProfile";
 import { AuthProvider } from "./context/AuthProvider";
+import ParanormalBackground from "./components/ParanormalBackground";
 
 /* ── Category-based pages (Home / Music / Hiking / etc.) ── */
 function CategoryPage() {
@@ -80,7 +81,8 @@ function ParanormalPage() {
 function App() {
   return (
     <AuthProvider>
-      <div className="min-h-screen bg-deep-charcoal flex flex-col items-center pb-12 transition-colors duration-500 text-white">
+      <ParanormalBackground />
+      <div className="min-h-screen bg-transparent flex flex-col items-center pb-12 transition-colors duration-500 text-white">
         <Header />
         <Routes>
           <Route path="/" element={<CategoryPage />} />
